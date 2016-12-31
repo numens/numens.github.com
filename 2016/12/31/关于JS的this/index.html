@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 搬砖的切图仔</title>
+  <title>关于JS的this | 搬砖的切图仔</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="搬砖的切图仔">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="今天来讲一下js中this指向的问题据说 this 是JS开发中的神器，本咸鱼也是深有体会，不仅仅是开发更加简便，而且看上去也是逼格很高。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于JS的this">
+<meta property="og:url" content="http://yoursite.com/2016/12/31/关于JS的this/index.html">
 <meta property="og:site_name" content="搬砖的切图仔">
+<meta property="og:description" content="今天来讲一下js中this指向的问题据说 this 是JS开发中的神器，本咸鱼也是深有体会，不仅仅是开发更加简便，而且看上去也是逼格很高。">
+<meta property="og:updated_time" content="2016-12-31T06:26:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搬砖的切图仔">
+<meta name="twitter:title" content="关于JS的this">
+<meta name="twitter:description" content="今天来讲一下js中this指向的问题据说 this 是JS开发中的神器，本咸鱼也是深有体会，不仅仅是开发更加简便，而且看上去也是逼格很高。">
   
     <link rel="alternative" href="/atom.xml" title="搬砖的切图仔" type="application/atom+xml">
   
@@ -145,36 +149,58 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-关于JS的this" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/31/关于JS的this/" class="archive-article-date">
-  	<time datetime="2016-12-31T04:16:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/31/关于JS的this/">关于JS的this</a>
+    <h1 class="article-title" itemprop="name">
+      关于JS的this
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        <a href="/2016/12/31/关于JS的this/" class="archive-article-date">
+  	<time datetime="2016-12-31T04:16:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-31</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="今天来讲一下js中this指向的问题"><a href="#今天来讲一下js中this指向的问题" class="headerlink" title="今天来讲一下js中this指向的问题"></a>今天来讲一下js中this指向的问题</h1><p>据说 <code>this</code> 是JS开发中的神器，本咸鱼也是深有体会，不仅仅是开发更加简便，而且看上去也是逼格很高。</p>
+<a id="more"></a>
+<p>我们先来看一下下面这段代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>);  <span class="comment">// window</span></div></pre></td></tr></table></figure>
+<p>在浏览器控制台中输入这段代码后，输出的是window对象，因为是在全局作用域下调用的。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>搬砖不易<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list">
@@ -186,57 +212,84 @@
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/29/第四天搬砖/" class="archive-article-date">
-  	<time datetime="2016-12-29T06:38:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/29/第四天搬砖/">第四天搬砖</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list">
-			 
-        <li class="article-tag-list-item">
-        	<a href="javascript:void(0)" class="article-tag-list-link color3">个人</a>
-        </li>
       
-		</ul>
-	</div>
 
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/12/31/关于JS的this/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/29/第四天搬砖/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第四天搬砖</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
 
 
           </div>
@@ -259,8 +312,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
