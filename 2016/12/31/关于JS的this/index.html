@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/12/31/关于JS的this/index.html">
 <meta property="og:site_name" content="搬砖的切图仔">
 <meta property="og:description" content="今天来讲一下js中this指向的问题据说 this 是JS开发中的神器，本咸鱼也是深有体会，不仅仅是开发更加简便，而且看上去也是逼格很高。">
-<meta property="og:updated_time" content="2016-12-31T07:33:21.000Z">
+<meta property="og:updated_time" content="2016-12-31T07:35:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于JS的this">
 <meta name="twitter:description" content="今天来讲一下js中this指向的问题据说 this 是JS开发中的神器，本咸鱼也是深有体会，不仅仅是开发更加简便，而且看上去也是逼格很高。">
@@ -171,7 +171,8 @@
 <a id="more"></a>
 <p>我们先来看一下下面这段代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>);  <span class="comment">// window</span></div></pre></td></tr></table></figure>
-<p>在浏览器控制台中输入这段代码后，输出的是window对象，因为是在全局作用域下调用的。<br>再来看看下面这段代码：</p>
+<p>在浏览器控制台中输入这段代码后，输出的是window对象，因为是在全局作用域下调用的。</p>
+<p>再来看看下面这段代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;;</div><div class="line"></div><div class="line">test(); <span class="comment">// window</span></div></pre></td></tr></table></figure>
 <p>输出的也是window对象，因为 <code>test()</code> 是 <code>window</code> 调用的，可以看作是 <code>window.test()</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">  <span class="attr">name</span>: <span class="string">'numens'</span>,</div><div class="line">  <span class="attr">fn</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">obj.fn(); <span class="comment">//numens</span></div></pre></td></tr></table></figure>
@@ -446,11 +447,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color3">JS</a>
+                <a href="javascript:void(0)" class="color3">个人</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color3">个人</a>
+                <a href="javascript:void(0)" class="color3">JS</a>
               </li>
             
             <div class="clearfix"></div>
